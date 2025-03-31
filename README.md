@@ -1,1 +1,5 @@
-# project1
+# project1: Conception d'une application React pour les Avis et alertes de Montréal.
+La section Avis et alertes présente les avis et alertes qui ont été émis par l'outil de gestion des alertes de la Ville. Les avis et alertes communiquent les renseignements importants à la population en cas d'urgence et en situations pouvant avoir un impact sur la vie quotidienne (ex: avis d'ébullition d'eau, travaux, fermeture de piscine, etc.).
+
+L'objectif de ce projet est de rendre l'information plus accessible et plus facile à consulter pour les citoyens de Montréal. Nous voulons que les informations soit accessibles en tout temps, même sans connexion internet et que les citoyens reçoivent des notifications d'alertes (sur leurs appareils) dès qu'elles sont émises, sans avoir à consulter directement l'application.
+Pour ce faire, nous allons transformer le site web en application web progressive (PWA). Le développement se fera en 3 phases, avec la première se concentrant sur la création de l'interface interactive.
