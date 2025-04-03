@@ -1,0 +1,46 @@
+
+
+.searchSection{
+    background-image: url('../assets/texture-large-undeground.png');
+    background-attachment: fixed;
+    background-size: contain;
+    padding: 40px 100px;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.searchBar{
+    width: 50%;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 35px;
+    font-size: 16px;
+}
+
+.filter{
+    background-color: var(--background-color);
+    padding: 20px 100px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+button{
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+button .chevron{
+    padding-left: 10px;
+    font-size: 10px;
+    color: var(--border-color);
+}

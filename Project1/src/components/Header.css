@@ -1,9 +1,4 @@
-:root{
-    --background-color: #f8f8f8;
-    --border-color: #adb2bd;
-    --text-color: #000;
-    --hover-color: #097d6c;
-}
+
 /* ------------------------HEADER--------------------------- */
 .header {
     display: flex;
@@ -22,29 +17,6 @@
     width: auto;
 }
 
-/* ------------------------MENU--------------------------- */
-.menu-button{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* ------------------------RECHERCHE--------------------------- */
-.search {
-    display: flex;
-    align-items: center;
-}
-.search-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.search-icon{
-    padding-right: 10px;
-}
 
 /* ------------------------ACCOUNT--------------------------- */
 .account a {
@@ -53,13 +25,6 @@
 
 .account-icon {
     padding-right: 10px;
-}
-/* ------------------------HOVER--------------------------- */
-.menu-button:hover {
-    color: var(--hover-color);
-}
-.search:hover {
-    color: var(--hover-color);
 }
 .account a:hover {
     color: var(--hover-color);
