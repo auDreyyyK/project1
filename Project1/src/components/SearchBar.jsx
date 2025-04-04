@@ -6,7 +6,7 @@ const SearchBar = () => {
     return(
         <div>
             <div className="searchSection">
-            <h2>Avis et Alertes</h2>
+            <h1>Avis et Alertes</h1>
             <p>Trouver un avis</p>
             <input type="text" placeholder="Que cherchez-vous?" className="searchBar" />
             <button>Rechercher</button>

@@ -3,6 +3,7 @@
   --background-color: #fbfbfb;
   --border-color: #bfc0c0;
   --text-color: #000;
+  --text-color-light: #7c7e7e;
   --hover-color: #097d6c;
 }
 
@@ -17,6 +18,7 @@
 /* ------------------- Home Page ------------------------ */
 main{
   display: flex;
+  align-items: baseline;
   gap: 50px;
   padding: 40px 100px;
   background-color: var(--background-color);
@@ -32,10 +34,9 @@ main{
   padding: 30px;
 }
 
-h4{
+h3{
   font-weight: bold;
   font-size: 20px;
-  line-height: 0;
 }
 .abonner p{
   font-size: 16px;
@@ -78,7 +79,7 @@ h4{
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #949696;
+  color: var(--text-color-light);
 }
 .alertItem .date p{
   font-size: 14px;
@@ -86,3 +87,26 @@ h4{
 .alertItem .date .calendar{
   font-size: 20px;
 }
+
+/* ------------------- Alertes Detail------------------------ */
+.alertDetail{
+  max-width: 70%;
+}
+.alertDetail div{
+  border-bottom: 1px solid var(--border-color);
+}
+.alertDetail h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+.alertDetail div p{
+  font-size: 14px;
+  color: var(--text-color-light);
+  margin-bottom: 50px;
+}
+.alertDetail p{
+  font-size: 16px;
+  margin-top: 50px;
+  color: var(--text-color-light);
+}
+
