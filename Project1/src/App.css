@@ -1,8 +1,88 @@
+
+:root{
+  --background-color: #fbfbfb;
+  --border-color: #bfc0c0;
+  --text-color: #000;
+  --hover-color: #097d6c;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   font-family:  Helvetica, sans-serif;
+  color: var(--text-color);
+}
+/* ------------------- Home Page ------------------------ */
+main{
+  display: flex;
+  gap: 50px;
+  padding: 40px 100px;
+  background-color: var(--background-color);
 
+}
+
+/* ------------------- S'abonner aux alertes ------------------------ */
+
+.abonner{
+  max-width: 25%;
+  height:fit-content;
+  background-color: #f4f4f4;
+  padding: 30px;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 0;
+}
+.abonner p{
+  font-size: 16px;
+}
+.abonner a{
+  color: var(--hover-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.abonner .arrow{
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+/* ------------------- Alertes ------------------------ */
+.alertItem{
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.alertItem a {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.alertItem a:hover{
+  color: var(--hover-color);
+}
+
+.alertItem .subject{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: var(--border-color);
+  padding: 5px 10px;
+  max-width: fit-content;
+}
+.alertItem .date{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #949696;
+}
+.alertItem .date p{
+  font-size: 14px;
+}
+.alertItem .date .calendar{
+  font-size: 20px;
 }
