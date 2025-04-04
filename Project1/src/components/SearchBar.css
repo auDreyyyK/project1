@@ -1,46 +1,86 @@
-
-
-.searchSection{
+.searchSection {
     background-image: url('../assets/texture-large-undeground.png');
     background-attachment: fixed;
     background-size: contain;
-    padding: 40px 100px;
+    padding: 2.5rem 6.25rem;
 }
 
-h1{
-    font-size: 40px;
+h1 {
+    font-size: 2.5rem;
     line-height: 0;
 }
 
-p{
-    font-size: 20px;
+p {
+    font-size: 1.25rem;
 }
 
-
-.searchBar{
+.searchBarContainer {
     width: 50%;
-    padding: 10px 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 35px;
-    font-size: 16px;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
 }
 
-.filter{
+.searchBar {
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2.1875rem;
+    font-size: 1rem;
+}
+
+.scroll {
+    max-height: fit-content;
     background-color: var(--background-color);
-    padding: 20px 100px;
+    border: 1px solid var(--border-color);
+    padding: 1.25rem;
+}
+
+.scrollAlert {
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+.filter {
+    background-color: var(--background-color);
+    padding: 1.25rem 6.25rem;
     border-bottom: 1px solid var(--border-color);
 }
 
-button{
+button {
     background: none;
     border: 1px solid var(--border-color);
-    border-radius: 35px;
-    margin-right: 20px;
+    border-radius: 2.1875rem;
+    margin-right: 1.25rem;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
-button .chevron{
-    padding-left: 10px;
-    font-size: 10px;
+
+button .chevron {
+    padding-left: 0.625rem;
+    font-size: 0.625rem;
     color: var(--border-color);
+}
+
+
+/*Media query pour rendre la page responsive*/
+@media (max-width: 768px) {
+    .searchSection {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .searchBarContainer {
+        width: 100%;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .scroll {
+        padding: 1.25rem;
+    }
+
+    .filter {
+        padding: 1.25rem;
+    }
 }
