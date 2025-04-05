@@ -41,10 +41,21 @@ h3{
 .abonner p{
   font-size: 16px;
 }
-.abonner a{
+.abonner .subscribe-btn{
+  background: none;
+  border: none;
   color: var(--hover-color);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+.abonner .subscribe-btn:hover{
+  background-color:#0dff000c;
+  cursor: pointer;
+}
+
+.abonner .subscribe-btn:focus{
+  outline: none;
 }
 
 .abonner .arrow{
@@ -110,3 +121,18 @@ h3{
   color: var(--text-color-light);
 }
 
+
+
+@media(max-width: 768px) {
+  main{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .abonner{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .alertDetail{
+    max-width: 100%;
+  }
+}
