@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState }from "react";
 import alerts from "../data/alerts"
 import AlertItem from "../components/AlertItem";
 import SearchBar from "../components/SearchBar"
 import Subscribe from "../components/Subscribe"
-import { data } from "react-router-dom";
 const HomePage = () => {
+    const [searchField, setSearchField] = useState("");
+    const filteredAlerts = alerts.filter(alert => alert.title.toLowerCase().includes(searchField.toLowerCase()));
     return(
         <div>
-            <SearchBar details={alerts} />
+            <SearchBar searchField={searchField} setSearchField={setSearchField} />
             <main>
                 <div className="alertList">
-                    {alerts.length > 0 ? (
-                    alerts.map(alert => (
+                    {filteredAlerts.length > 0 ? (
+                    filteredAlerts.map(alert => (
                         <AlertItem key={alert.id} alert={alert}/>
                     ))
                     ):(

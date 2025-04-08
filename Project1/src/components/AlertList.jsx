@@ -3,7 +3,11 @@ import AlertItem from "./AlertItem";
 
 const AlertList = ({filteredAlerts, isSearchMode}) =>{
     const filtered = filteredAlerts.map(alert =>
-        <AlertItem key={alert.id} alert={alert} isSearchMode={isSearchMode}/>
+        <AlertItem 
+            key={alert.id} 
+            alert={alert} 
+            isSearchMode={isSearchMode}
+        />
     );
     return(
         <div>

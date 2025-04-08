@@ -13,7 +13,7 @@ const Subscribe = () =>{
                 trigger={<button className="subscribe-btn">
                     M'abonner <FaArrowRight className="arrow"/></button>}
                 >
-                <p>Cette fonctionnalité n'est pas encore disponible</p> 
+                <p className="popupMsg">Cette fonctionnalité n'est pas encore disponible</p> 
             </Popup>
         </div>
     )

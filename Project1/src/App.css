@@ -38,7 +38,7 @@ h3{
   font-weight: bold;
   font-size: 20px;
 }
-.abonner p{
+.abonner p {
   font-size: 16px;
 }
 .abonner .subscribe-btn{
@@ -62,6 +62,14 @@ h3{
   font-size: 12px;
   padding-left: 4px;
 }
+
+.popupMsg{
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 
 /* ------------------- Alertes ------------------------ */
 .alertItem{
