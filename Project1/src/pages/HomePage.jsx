@@ -5,6 +5,7 @@ import SearchBar from "../components/SearchBar"
 import Subscribe from "../components/Subscribe"
 import FilteredArrondissement from "../components/FilteredArrondissement";
 import FilteredSubject from "../components/FilteredSubject";
+import dayjs from "dayjs";
 
 
 const HomePage = () => {
@@ -38,6 +39,11 @@ const HomePage = () => {
         const matchArrondissement = selectedArrondissement === "All" || alert.arrondissement === selectedArrondissement;
         const matchSubject = selectedSubject === "All" || alert.sujet === selectedSubject;
         return matchTitle && matchArrondissement && matchSubject;
+    })
+    .sort((a, b) => {
+        const dateA = dayjs(a.date, 'DD/MM/YYYY');
+        const dateB = dayjs(b.date, 'DD/MM/YYYY');
+        return dateB - dateA;
     });
 
 
