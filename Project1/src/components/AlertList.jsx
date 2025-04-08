@@ -1,17 +1,13 @@
 import React from "react";
 import AlertItem from "./AlertItem";
 
-const AlertList = ({filteredAlerts, isSearchMode}) =>{
-    const filtered = filteredAlerts.map(alert =>
-        <AlertItem 
-            key={alert.id} 
-            alert={alert} 
-            isSearchMode={isSearchMode}
-        />
-    );
+const AlertList = ({filteredAlerts}) =>{
     return(
         <div>
-            {filtered}
+            <AlertItem 
+            key={alert.id} 
+            alert={alert} 
+            />
         </div>
     );
 };
