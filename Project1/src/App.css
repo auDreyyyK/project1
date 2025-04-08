@@ -16,6 +16,50 @@
   color: var(--text-color);
 }
 /* ------------------- Home Page ------------------------ */
+.searchSection {
+  background-image: url('./assets/texture-large-undeground.png');
+  background-attachment: fixed;
+  background-size: contain;
+  padding: 2.5rem 6.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.searchBarContainer {
+  width: 50%;
+  margin-top: 1.25rem;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2.1875rem;
+  font-size: 1rem;
+}
+
+.filter{
+  display: flex;
+  padding: 1rem 6.25rem;
+  gap: 1.625rem;
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+select{
+  border: 1px solid var(--border-color);
+  border-radius: 2.1875rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
 main{
   display: flex;
   align-items: baseline;
